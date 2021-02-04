@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 #############################################
 # GENERAL
 #############################################
-
+# eklendi
 def grab_col_names(dataframe, cat_th=10, car_th=20):
 
     cat_cols = [col for col in dataframe.columns if dataframe[col].dtypes == "O"]
