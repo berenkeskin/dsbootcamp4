@@ -8,6 +8,16 @@ import matplotlib.pyplot as plt
 #############################################
 
 def grab_col_names(dataframe, cat_th=10, car_th=20):
+    """
+    Grab col names for given dataframe
+
+    :param dataframe:
+    :param cat_th:
+    :param car_th:
+    :return:
+
+    """
+
     cat_cols = [col for col in dataframe.columns if dataframe[col].dtypes == "O"]
 
     num_but_cat = [col for col in dataframe.columns if dataframe[col].nunique() < cat_th and
